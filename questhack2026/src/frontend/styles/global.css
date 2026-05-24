@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0b2e26; /* dark green */
+  color: #ffffff;
+}
+
+.header-banner {
+  width: 100%; /* full screen width */
+  height: 320px; /* fixed height */
+  object-fit: cover; /* keeps image nicely cropped */
+  display: block;
+}
+
+header {
+  background: #06211c;
+  #padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00ffcc;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps it above other content */
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #a0f0d0;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #c8fff0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #103c34;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #00ffcc;
+}
+
+.card p {
+  color: #d0fff5;
+  font-size: 14px;
+}
+
+footer {
+  background: #06211c;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #00ffcc;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px;
+  color: #a0f0d0;
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.analyze-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #123d1f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
+  text-align: center;
+}
+
+.analyze-container input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.analyze-container button {
+  padding: 12px 20px;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analyze-container button:hover {
+  background-color: #00e676;
+}
