@@ -1,27 +1,27 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #0b2e26; /* dark green */
+  background: #001e2b; /* dark green #0b2e26*/
   color: #ffffff;
 }
 
-.header-banner {
-  width: 100%; /* full screen width */
-  height: 320px; /* fixed height */
-  object-fit: cover; /* keeps image nicely cropped */
-  display: block;
-}
-
-header {
+.banner-container {
+  position: sticky;
+  top: 0;
   background: #06211c;
-  #padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #00ffcc;
-  position: sticky;
-  top: 0;
+  overflow: hidden;
   z-index: 1000; /* Keeps it above other content */
+}
+
+.banner-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* Fills the 30% area without distorting the image */
 }
 
 .logo {
@@ -42,9 +42,11 @@ header {
 }
 
 .hero h1 {
-  font-size: 48px;
+  background-color: transparent;
+  color: #00ed64;
+  font-weight: 500;
   margin-bottom: 10px;
-  color: #00ffcc;
+  font-size: 48px;
 }
 
 .hero p {
@@ -102,7 +104,7 @@ footer p {
 .analyze-container {
   width: 100%;
   max-width: 600px;
-  margin: 100px auto;
+  margin: 40px auto;
   padding: 20px;
   background-color: #123d1f;
   border-radius: 10px;

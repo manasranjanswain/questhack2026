@@ -1,65 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hackstreet Boys</title>
-  
-  <!-- Link your global CSS file here -->
-    <link rel="stylesheet" href="/src/frontend/styles/global.css">
-  
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackstreet Boys</title>
 
-<body>
+    <!-- Link your global CSS file here -->
+    <link rel="stylesheet" href="/src/frontend/styles/global.css" />
 
-  <!-- HEADER -->
-<header class="header">
-  <img src="/hackstreet_boys_banner.png" alt="Hackstreet Banner" 
-  class="header-banner"/>
-</header>
+    <!-- This is the line that adds the favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="banner-container">
+      <img
+        src="hackstreet_boys_banner.png"
+        alt="Hackstreet Boys Banner"
+        class="banner-img"
+      />
+    </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>AI Powered Infrastructure Intelligence</h1>
-    <p>Transforming Splunk Logs into Smart Server Recommendations</p>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Agentic AI Powered Infrastructure Intelligence</h1>
+      <p>Transforming Splunk Logs into Smart Server Recommendations</p>
+    </section>
 
-  <div class="analyze-container">
-    <input type="text" placeholder="Enter server name to analyze..." />
-    <button onclick="analyzeText()">Analyze</button>
-  </div>
-
-  <!-- FEATURES -->
-  <section class="card-container">
-
-    <div class="card">
-      <h3>📊 Log Analysis</h3>
-      <p>Analyze 6 months of CPU, Memory, and Storage usage from Splunk.</p>
+    <div class="analyze-container">
+      <input type="text" placeholder="Enter server name to analyze..." />
+      <button onclick="analyzeText()">Analyze</button>
     </div>
 
-    <div class="card">
-      <h3>🤖 AI Agents</h3>
-      <p>Autonomous agents predict future workload and optimize infra.</p>
-    </div>
+    <!-- FEATURES -->
+    <section class="card-container">
+      <div class="card">
+        <h3>CPU Peak</h3>
+        <p>82%</p>
+      </div>
 
-    <div class="card">
-      <h3>⚙️ Smart Recommendation</h3>
-      <p>Get CPU, RAM, and Storage recommendations instantly.</p>
-    </div>
+      <div class="card">
+        <h3>Memory Peak</h3>
+        <p>88%</p>
+      </div>
 
-    <div class="card">
-      <h3>💰 Cost Optimization</h3>
-      <p>Generate T-shirt sizing and cost estimation for new servers.</p>
-    </div>
+      <div class="card">
+        <h3>Disk growth</h3>
+        <p>5%</p>
+      </div>
+    </section>
 
-  </section>
+    <section class="card-container">
+      <div class="card">
+        <h3>📊 Log Analysis</h3>
+        <p>Analyze 6 months of CPU, Memory, and Storage usage from Splunk.</p>
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>🚀 Hackstreet Boys</p>
-    <p>Agents Think, Systems Scale</p>
-    <p>© 2026 Hackathon Project</p>
-  </footer>
+      <div class="card">
+        <h3>🤖 AI Agents</h3>
+        <p>Autonomous agents predict future workload and optimize infra.</p>
+      </div>
 
-</body>
+      <div class="card">
+        <h3>⚙️ Smart Recommendation</h3>
+        <p>Get CPU, RAM, and Storage recommendations instantly.</p>
+      </div>
+
+      <div class="card">
+        <h3>💰 Cost Optimization</h3>
+        <p>Generate T-shirt sizing and cost estimation for new servers.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>🚀 Hackstreet Boys</p>
+      <p>Agents Think, Systems Scale</p>
+      <p>© 2026 Hackathon Project</p>
+    </footer>
+  </body>
 </html>
